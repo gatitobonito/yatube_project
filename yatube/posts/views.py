@@ -12,3 +12,7 @@ def index(request):
 # Страница для постов;
 def group_posts(request, slug):
     return HttpResponse(f'Страница для общих постов {slug}')
+
+def group_list(request):
+    template = 'posts/group_list.html'
+    return render(request, template)
