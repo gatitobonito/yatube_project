@@ -12,3 +12,10 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         related_name='posts'
     )
+
+
+class Group(models.Model):
+    title = models.CharField()
+    slug = models.URLField()
+    description = models.TextField()
+    __str__
