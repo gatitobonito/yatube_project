@@ -8,6 +8,5 @@ app_name = 'posts'
 urlpatterns = [
     # Главная страница
     path('', views.index),
-    #path('group/<slug>/', views.group_posts),
     path('group/<slug>/', views.group_posts, name='group_list'),
 ]

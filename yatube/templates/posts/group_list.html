@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
+
 {% block title %}
   {{ title }}
 {% endblock %}
+
 {% block content %}
         <h1>Лев Толстой – зеркало русской революции.</h1>
         <p>
@@ -21,8 +23,6 @@
             {{ post.text }}
           </p>
         {% endfor %}
-
         </article>
         <hr>
-
 {% endblock %}
