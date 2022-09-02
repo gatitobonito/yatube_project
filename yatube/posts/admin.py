@@ -14,11 +14,11 @@ class PostAdmin(admin.ModelAdmin):
         'author',
         'group',
     )
+    list_editable = ('group',)
     # Добавляем интерфейс для поиска по тексту постов
     search_fields = ('text',)
     # Добавляем возможность фильтрации по дате
     list_filter = ('pub_date',)
-    list_editable = ('group',)
     empty_value_display = '-пусто-'
 
 
